@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment for "while-loop"</title>
+
+    <script>
+        //Intialising a number
+        var num = parseInt(prompt("Enter the Number: "))
+        var i = 1;
+        //check number for calculation
+        while (i <= num) {
+            if (i % 3 == 0) {
+                i++;
+                continue;
+            }
+            document.write("Number is " + i + "<br/>")
+            i++;
+
+        }
+        document.write("Loop ends here...")
+    </script>
+</head>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <script>
+        function calculate(buttonClick) {
+            var x = parseInt(document.calform.num1.value);
+            var y = parseInt(document.calform.num2.value);
+            var z = document.calform.res;
+            if (buttonClick.value == "Add") {
+                z.value = x + y;
+            }
+            else if (buttonClick.value == "Sub") {
+                z.value = x - y;
+            }
+            else if (buttonClick.value == "Mul") {
+                z.value = x * y;
+            }
+            else if (buttonClick.value == "Div") {
+                z.value = x / y;
+            }
+            else {
+                z.value = x % y;
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="calform">
+        Number1:<input type="text" name="num1" style="margin: 5px;" /><br />
+        Number2:<input type="text" name="num2" style="margin: 5px;" /><br />
+        Result:<input type="text" name="res" style="margin: 5px;" /><br />
+        <input type="button" name="add" value="Add" onclick="calculate(this)" style="margin-right: 10px;" />
+        <input type="button" name="sub" value="Sub" onclick="calculate(this)" style="margin-right: 10px;" />
+        <input type="button" name="mul" value="Mul" onclick="calculate(this)" style="margin-right: 10px;" />
+        <input type="button" name="div" value="Div" onclick="calculate(this)" style="margin-right: 10px;" />
+        <input type="button" name="mod" value="Mod" onclick="calculate(this)" style="margin-right: 10px;" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <script>
+        function handleOnChangeEvent(a) {
+            document.body.style.backgroundImage = "url('"+a+"')";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <select onchange="handleOnChangeEvent(this.value)">
+        <option value="">Select a Rose</option>
+        <option value="../images/Red_Rose.jpg" style="width: auto;">Red Rose</option>
+        <option value="../images/Blue_Rose.jpg"style="width: auto;">Blue Rose</option>
+        <option value="../images/Yellow_Rose.jpg"style="width: auto;">Yellow Rose</option>
+        <option value="../images/White_Rose.jpg"style="width: auto;">White Rose</option>
+        <option value="../images/Black_Rose.jpg"style="width: auto;">Black Rose</option>
+        <option value="../images/Pink_Rose.jpg"style="width: auto;">Pink Rose</option>
+    </select>
+</body>
+
+</html>

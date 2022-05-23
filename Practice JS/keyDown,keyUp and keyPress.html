@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>keyUp keyDown and keyPress</title>
+    <script>
+        function keyDown(d) {
+
+            d.style.color = "pink";
+            d.style.backgroundColor = "blue";
+
+        }
+        function keyUp(u) {
+
+            u.style.color = "red";
+            u.style.backgroundColor = "yellow";
+
+        }
+        function keyPress(p) {
+
+            p.style.color = "white";
+            p.style.backgroundColor = "purple";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" onkeydown="keyDown(this)" onkeyup="keyUp(this)" onkeypress="keyPress(this)" />
+</body>
+
+</html>

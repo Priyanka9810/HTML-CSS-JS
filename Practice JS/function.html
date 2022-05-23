@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions"</title>
+
+<script>
+    //function with no argument
+    function display() {
+        confirm("This is a function..")
+    }
+    display();
+
+    //function with arguments
+    function calculate(x, y) {
+        document.write("Multiplication of " + x + " and " + y + " is: " + (x * y) + "<br/>");
+    }
+    calculate(5, 10);
+    calculate(50, 5);
+
+    //function with return
+    function Mul(x, y) {
+        return (x * y)
+    }
+    var res = Mul(40, 10);
+    document.write("Multiplication is: " + res + "<br/>");
+
+
+    //function within a function
+    function f1() {
+        var a = "Hii..";
+        function f2() {
+            var b = "Priyanka..";
+            document.write(a + " " + b);
+        }
+        return f2();
+    }
+    f1();
+</script>
+</head>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <script>
+        function handleOnChangeEvent(a) {
+            window.location = a
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <select onchange="handleOnChangeEvent(this.value)">
+        <option value="">Select a Web</option>
+        <option value="https://www.google.com/">Goggle</option>
+        <option value="https://www.youtube.com/">YouTube</option>
+        <option value="https://www.facebook.com/">Facebook</option>
+        <option value="https://www.instagram.com/">Instagram</option>
+        <option value="https://twitter.com/">Twitter</option>
+    </select>
+</body>
+
+</html>

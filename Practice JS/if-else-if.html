@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Assignment for pop up</title>
+    </head>
+    <script>
+        var math = parseInt(prompt("Enter the mark for Math: "))
+        document.write("Math: "+math+"<br/>");
+        var eng = parseInt(prompt("Enter the mark for English: "))
+        document.write("English: "+eng+"<br/>");
+        var sci = parseInt(prompt("Enter the mark for Science: "))
+        document.write("Science: "+sci+"<br/>");
+        alert("Evaluating Grades..")
+        var total=math+eng+sci;
+        document.write("Your Total Score is: "+total+"<br/>")
+        var grade=(math+eng+sci)/3;
+        document.write("Your Average Score is: "+grade+"<br/>")
+        if(math>=35 && eng>=35 && sci>=35){
+        if(grade>=80){
+            document.write("You got 'A' Grade");
+        }
+        else if(grade>=60 && grade<80){
+            document.write("You got 'B' Grade");
+        }
+        else if(grade>=35 && grade<60){
+            document.write("You got 'C' Grade");
+        }
+    }
+    else{
+        document.write("You are failed..")
+    }
+    </script>
+</html>

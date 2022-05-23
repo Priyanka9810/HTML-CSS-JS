@@ -1,0 +1,119 @@
+<!--DOCTYPE html-->
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Calculator</title>
+
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="res"></td>
+                <td><button onclick="ac()">AC</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="show('1')">1</button></td>
+                <td><button onclick="show('2')">2</button></td>
+                <td><button onclick="show('3')">3</button></td>
+                <td><button onclick="show('+')" id="add">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="show('4')">4</button></td>
+                <td><button onclick="show('5')">5</button></td>
+                <td><button onclick="show('6')">6</button></td>
+                <td><button onclick="show('-')" id="sub">-</button></td>
+
+            </tr>
+
+            <tr>
+                <td><button onclick="show('7')">7</button></td>
+                <td><button onclick="show('8')">8</button></td>
+                <td><button onclick="show('9')">9</button></td>
+                <td><button onclick="show('*')" id="mul">*</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="show('0')">0</button></td>
+                <td><button onclick="show('%')" id="mod">%</button></td>
+                <td><button onclick="show('/')" id="div">/</button></td>
+                <td><button onclick="cal('=')">=</button></td>
+
+            </tr>
+        </table>
+        <script>
+
+            function ac() {
+
+                document.getElementById("res").value = "";
+            }
+            function show(input) {
+                document.getElementById("res").value += input;
+            }
+            function check() {
+                var res = [];
+                var answer;
+
+                if (document.getElementById("res").value.includes("+")) {
+                    res = document.getElementById("res").value.split('+');
+                    let sum=0;
+                    for(let i=0;i<res.length;i++){                           
+                       sum=parseInt(sum)+parseInt( (res[i]));
+                                              
+                    }
+                    return sum ;
+                }
+                else if (document.getElementById("res").value.includes("-")) {
+
+                    res = document.getElementById("res").value.split('-');
+
+                    let sub=res[0];
+                    for(let i=1;i<res.length;i++){                           
+                       sub=sub-parseInt(res[i]);
+                                              
+                    }
+                    return sub ;
+                }
+
+                else if (document.getElementById("res").value.includes("/")) {
+
+                    res = document.getElementById("res").value.split('/');
+                    let div=res[0];
+                    for(let i=1;i<res.length;i++){                           
+                       div=div/parseInt (res[i]);
+                                              
+                    }
+                    return div ;
+                }
+
+                else if (document.getElementById("res").value.includes("%")) {
+                    res = document.getElementById("res").value.split("%");
+                    return parseInt(res[0]) % parseInt(res[1]);
+                }
+                else {
+                    res = document.getElementById("res").value.split('*');
+                    let mul=1;
+                    for(let i=0;i<res.length;i++){                           
+                       mul=parseInt(mul)*parseInt(res[i]);
+                                              
+                    }
+                    return mul ;
+                }
+            }
+            function cal() {
+                var a = check()
+
+                document.getElementById('res').value = a;
+            }
+
+        </script>
+    </body>
+
+</html>

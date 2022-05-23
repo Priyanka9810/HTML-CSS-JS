@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Result Table</title>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <!-- header  -->
+        <center>
+            <h1 style="color: aliceblue;">Result details</h1>
+        </center>
+
+        <!-- main form start -->
+        <div class="formtable">
+            <form name="myForm" autocomplete="off" onsubmit="onFormSubmit()" class="formStyle">
+                <div>
+                    <label for="roll_no">Roll No.</label>
+                    <input type="number" name="Roll_No" id="roll_no" placeholder="Enter the Roll Number" required>
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name" placeholder="Enter the Name" pattern="[a-zA-Z'-'\s]*" required><br/>
+                    <span style="color: red;font-size: small;">Only Alphabets can entry*</span>
+                </div>
+                <div>
+                    <label for="physics">Physics</label>
+                    <input type="number" name="Phy" id="physics" placeholder="Enter the Mark" max="50" required>
+                </div>
+                <div>
+                    <label for="Chemistry">Chemistry</label>
+                    <input type="number" name="Chem" id="chemistry" placeholder="Enter the Mark" max="50" required>
+                </div>
+                <div>
+                    <label for="math">Math</label>
+                    <input type="number" name="Math" id="math" placeholder="Enter the Mark" max="50" required>
+                </div>
+                <center>
+                    <div class="form_button">
+                        <input type="submit" value="Add" id="add">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </center>
+            </form>
+        </div>
+        <!-- main form end-->
+
+        <div class="maintable">
+
+            <table id="storeList" border="2" style="border-collapse: collapse; width:90%;margin:25px 30px 10px;">
+                <thead class="lists">
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Phy</th>
+                        <th>Chem</th>
+                        <th>Math</th>
+                        <th>Total</th>
+                        <th>Result</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table_body">
+
+                </tbody>
+
+            </table>
+            <div id="table_info">
+                <center>
+                    <h4>No Record Available</h4>
+                </center>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Additional Information about Student Result -->
+        <div class="passDetails">
+            <center>
+                <label for="passStudent" style="color: white;"><b>No. of Passed Students:</b></label>
+                <input type="number" name="pass" id="passStudent" style="width: 10%; margin-right: 10px; border-radius: 2px;" readonly>
+
+                <label for="failStudent" style="color: white;"><b>No. of Failed Students:</b></label>
+                <input type="number" name="fail" id="failStudent" style="width: 10%; margin-right: 10px;border-radius: 2px;" readonly><br/>
+
+                <label for="passPercent" style="color: white;"><b>Passing %:</b></label>
+                <input type="number" name="passpecerent" id="passPercent" style="width: 10%; margin-right: 10px;border-radius: 2px;" readonly>
+            </center>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>

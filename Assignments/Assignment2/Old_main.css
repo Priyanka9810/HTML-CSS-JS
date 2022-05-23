@@ -1,0 +1,113 @@
+body {
+    background-image: url('image/background8.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(201, 130, 201);
+    border-radius: 20px;
+}
+
+.formStyle {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lists {
+    text-align: center;
+    width: 90%;
+    border: double;
+    bottom: 200px;
+    position: relative;
+    border-radius: 2px;
+}
+
+
+/*   */
+
+table #storeList {
+    border: 2px;
+}
+
+.table_body td {
+    border-radius: 1px;
+    text-align: center;
+    padding: 0px 18px;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+tr:nth-child(even),
+table.list thread>tr {
+    background-color: white;
+}
+
+.formStyle label {
+    display: table-cell;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 71%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-radius: 24px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: rgb(110, 110, 219);
+    padding: 6px 12px;
+    margin: 15px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: rgb(100, 173, 100);
+}
+
+input[type="reset"]:hover {
+    background: rgb(199, 64, 64);
+}
+
+
+/* .form_button {
+    font-size: medium;
+    font-weight: 300;
+} */
+
+button {
+    background: oldlace;
+    padding: 6px 12px;
+    margin: 15px 5px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: rgb(117, 206, 117);
+}

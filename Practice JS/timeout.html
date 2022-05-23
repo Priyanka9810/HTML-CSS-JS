@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Timeout</title>
+    <script>
+        function waitForFourSec() {
+            setTimeout(onloadRedirect, 4000);
+        }
+
+        function onloadRedirect() {
+            window.location = "https://www.instagram.com";
+        }
+    </script>
+</head>
+
+<body onload="waitForFourSec()">
+
+    <b>Redirecting the Page..</b>
+
+</body>
+
+</html>

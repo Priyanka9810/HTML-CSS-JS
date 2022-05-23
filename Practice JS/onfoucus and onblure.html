@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>onfocus and onblur</title>
+    <script>
+        function onFocusArea(f) {
+
+            f.style.color = "pink";
+            f.style.backgroundColor = "blue";
+
+        }
+        function onBlurArea(b) {
+
+            b.style.color = "blue";
+            b.style.backgroundColor = "pink";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" onfocus="onFocusArea(this)" onblur="onBlurArea(this)"/>
+</body>
+
+</html>

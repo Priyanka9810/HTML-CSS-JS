@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array and Functions of Array</title>
+    <script>
+        var a = [1, "Pinky", 45.5];
+        document.write("Array a is: " + a[0] + "\t" + a[1] + "\t" + a[2] + " <br/>")
+        document.write("Length of Array a is: " + a.length + "<br/>")
+        document.write("Array a is: " + a + "<br/>");
+        var b = new Array(2, "Priya,99.4");
+        document.write("Array b is: " + b + "<br/>");
+        var c = new Array();
+        c[0] = 3;
+        c[1] = "Priyanka";
+        c[2] = 3.4;
+        document.write("Array c is: " + c + "<br/>");
+
+        document.write("------Functions-------<br/>");
+        document.write(a.concat(b) + "<br/>");
+        document.write(c.concat(20, 67) + "<br/>");
+        document.write(a.reverse() + "<br/>")
+        document.write(a.join("--"));
+
+        document.write("<br/>---Deletion-----<br/>")
+        delete a[0];
+        document.write("After deletion Array a is:  " + a + "<br/>");
+
+        document.write("----Replacement-----<br/>")
+        a[1] = "Replacement";
+        document.write("After replacement Array a is:  " + a + "<br/>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
